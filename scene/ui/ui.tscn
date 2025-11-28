@@ -1,0 +1,224 @@
+[gd_scene load_steps=2 format=3 uid="uid://bna0b2dp7x6su"]
+
+[ext_resource type="Script" uid="uid://bh4d0j75tl8v6" path="res://script/ui/ui.gd" id="1_0nso0"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0nso0")
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 10.0
+grow_horizontal = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2/PanelContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="MarginContainer2/PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+
+[node name="Wood" type="Label" parent="MarginContainer2/PanelContainer/HBoxContainer/Control"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Wood: 0"
+
+[node name="Control2" type="Control" parent="MarginContainer2/PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+
+[node name="Stone" type="Label" parent="MarginContainer2/PanelContainer/HBoxContainer/Control2"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Stone: 0"
+
+[node name="Control3" type="Control" parent="MarginContainer2/PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+
+[node name="Food" type="Label" parent="MarginContainer2/PanelContainer/HBoxContainer/Control3"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Food: 0"
+
+[node name="Control4" type="Control" parent="MarginContainer2/PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+
+[node name="Gold" type="Label" parent="MarginContainer2/PanelContainer/HBoxContainer/Control4"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Gold: 0"
+
+[node name="Control5" type="Control" parent="MarginContainer2/PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+
+[node name="Population" type="Label" parent="MarginContainer2/PanelContainer/HBoxContainer/Control5"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Population: 0"
+
+[node name="LeftContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -50.0
+offset_right = 85.0
+grow_vertical = 0
+
+[node name="GridContainer" type="GridContainer" parent="LeftContainer"]
+layout_mode = 2
+columns = 3
+
+[node name="Building1" type="Button" parent="LeftContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Bldg 1"
+
+[node name="Building2" type="Button" parent="LeftContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Bldg 2"
+
+[node name="Building3" type="Button" parent="LeftContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Bldg 3"
+
+[node name="Building4" type="Button" parent="LeftContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Bldg 4"
+
+[node name="Building5" type="Button" parent="LeftContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Bldg 5"
+
+[node name="RightGridPanel" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -80.0
+offset_top = -80.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 8
+
+[node name="GridContainer" type="GridContainer" parent="RightGridPanel"]
+layout_mode = 2
+columns = 3
+
+[node name="Button" type="Button" parent="RightGridPanel/GridContainer"]
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="RightGridPanel/GridContainer"]
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="RightGridPanel/GridContainer"]
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="RightGridPanel/GridContainer"]
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="RightGridPanel/GridContainer"]
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="RightGridPanel/GridContainer"]
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="RightGridPanel/GridContainer"]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="RightGridPanel/GridContainer"]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="RightGridPanel/GridContainer"]
+layout_mode = 2
+
+[node name="MiddleContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -71.5
+offset_top = -50.0
+offset_right = 31.5
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 8
+
+[node name="GridContainer" type="GridContainer" parent="MiddleContainer"]
+layout_mode = 2
+columns = 3
+
+[node name="Grid" type="Button" parent="MiddleContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Grid"
+
+[node name="Line" type="Button" parent="MiddleContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Line"
+
+[node name="Wedge" type="Button" parent="MiddleContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Wedge"
+
+[node name="Square" type="Button" parent="MiddleContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Square"
+
+[node name="Triangle" type="Button" parent="MiddleContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Triangle"
