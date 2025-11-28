@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://bnl2kmh1c4wyl"]
+[gd_scene load_steps=14 format=4 uid="uid://bnl2kmh1c4wyl"]
 
 [ext_resource type="Script" uid="uid://xhfboururn5m" path="res://script/selection_box.gd" id="1_okf0i"]
 [ext_resource type="Script" uid="uid://cl2h3gcd1vek1" path="res://script/player_camera.gd" id="2_6bffp"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://v4nh5m315l0a" path="res://assets/sprites/48x48 sheet.png" id="4_g7awx"]
 [ext_resource type="PackedScene" uid="uid://bna0b2dp7x6su" path="res://scene/ui/ui.tscn" id="4_w1wvs"]
 [ext_resource type="Script" uid="uid://b32vdni6lmraw" path="res://script/ground.gd" id="5_urr70"]
+[ext_resource type="PackedScene" uid="uid://tbld5f7l41uy" path="res://scene/pause_menu.tscn" id="8_302jv"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_w1wvs"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -125,3 +126,5 @@ position = Vector2(62, 164)
 
 [node name="Unit4" parent="." instance=ExtResource("2_pa2i8")]
 position = Vector2(350, 176)
+
+[node name="PauseMenu" parent="." instance=ExtResource("8_302jv")]
